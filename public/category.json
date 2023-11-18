@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Web Development",
+    "image": "https://i.ibb.co/BfgPFMb/web-developemnt.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Graphics Design",
+    "image": "https://i.ibb.co/DWwfGpj/Digital-Marketing.jpg"
+  },
+  {
+    "id": 3,
+    "name": "All in One SEO",
+    "image": "https://i.ibb.co/zrWjQ2r/SEO.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Ethical Hacking",
+    "image": "https://i.ibb.co/CVFZMXJ/Ethical-Hacking.jpg"
+  }
+]

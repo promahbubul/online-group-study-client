@@ -1,0 +1,146 @@
+[
+  {
+    "title": "HTML Basics",
+    "description": "Introduction to HTML",
+    "image": "https://lenadesign.org/wp-content/uploads/2019/12/html-basic.jpg",
+    "category": "Web Development",
+    "level": "easy",
+    "marks": 100
+  },
+  {
+    "title": "CSS Styling",
+    "description": "Fundamentals of CSS",
+    "image": "https://img-c.udemycdn.com/course/750x422/5380132_3dad.jpg",
+    "category": "Web Development",
+    "level": "medium",
+    "marks": 120
+  },
+  {
+    "title": "JavaScript Fundamentals",
+    "description": "Basic concepts of JavaScript",
+    "image": "https://miro.medium.com/v2/resize:fit:800/1*PmUTWiNpLP-Qult2tuUtWw.jpeg",
+    "category": "Web Development",
+    "level": "hard",
+    "marks": 150
+  },
+  {
+    "title": "Responsive Web Design",
+    "description": "Creating responsive web layouts",
+    "image": "https://www.searchenginejournal.com/wp-content/uploads/2021/10/responsive-web-design-1-61f01c4b64c5f-sej.png",
+    "category": "Web Development",
+    "level": "medium",
+    "marks": 130
+  },
+  {
+    "title": "Network Security",
+    "description": "Basics of network security",
+    "image": "https://www.cisco.com/c/dam/assets/swa/img/anchor-info/what-is-network-security-blog-banner-628x353.png",
+    "category": "Ethical Hacking",
+    "level": "hard",
+    "marks": 150
+  },
+  {
+    "title": "Penetration Testing",
+    "description": "Overview of penetration testing",
+    "image": "https://purplesec.us/wp-content/uploads/2019/06/External-VS-Internal-Network-Penetration-Tests.png",
+    "category": "Ethical Hacking",
+    "level": "easy",
+    "marks": 100
+  },
+  {
+    "title": "Cryptography",
+    "description": "Introduction to cryptographic techniques",
+    "image": "https://online.york.ac.uk/wp-content/uploads/2023/10/Cryptography.jpg",
+    "category": "Ethical Hacking",
+    "level": "medium",
+    "marks": 120
+  },
+  {
+    "title": "Malware Analysis",
+    "description": "Analyzing malicious software",
+    "image": "https://securityintelligence.com/wp-content/uploads/2018/10/si-malware-analysis-feature.jpg",
+    "category": "Ethical Hacking",
+    "level": "easy",
+    "marks": 110
+  },
+  {
+    "title": "SEO Fundamentals",
+    "description": "Introduction to SEO principles",
+    "image": "https://img.freepik.com/premium-vector/seo-search-engine-optimization-concept-vector-illustration_185038-486.jpg",
+    "category": "SEO",
+    "level": "medium",
+    "marks": 120
+  },
+  {
+    "title": "Keyword Research",
+    "description": "Strategies for effective keyword research",
+    "image": "https://resultsrepeat.com/wp-content/uploads/2020/06/Keyword-Research-for-SEO.jpg",
+    "category": "SEO",
+    "level": "easy",
+    "marks": 100
+  },
+  {
+    "title": "On-Page Optimization",
+    "description": "Optimizing on-page elements for SEO",
+    "image": "https://ceblog.s3.amazonaws.com/wp-content/uploads/2018/05/19211217/cluster-on-page-seo.jpg",
+    "category": "SEO",
+    "level": "hard",
+    "marks": 140
+  },
+  {
+    "title": "Digital Marketing Strategies",
+    "description": "Key strategies in digital marketing",
+    "image": "https://img.freepik.com/premium-vector/rocket-boosting-digital-marketing-social-media-with-laptop_112255-1433.jpg",
+    "category": "Digital Marketing",
+    "level": "easy",
+    "marks": 100
+  },
+  {
+    "title": "Social Media Marketing",
+    "description": "Utilizing social media for marketing",
+    "image": "https://img.freepik.com/premium-photo/social-media-icons-logos-with-3d-space-rocket-digital-social-media-marketing-background_125322-391.jpg",
+    "category": "Digital Marketing",
+    "level": "medium",
+    "marks": 120
+  },
+  {
+    "title": "Email Marketing",
+    "description": "Effective email marketing practices",
+    "image": "https://img.freepik.com/free-vector/email-marketing-landing-page-isometric-view_107791-6125.jpg",
+    "category": "Digital Marketing",
+    "level": "hard",
+    "marks": 150
+  },
+  {
+    "title": "UX/UI Design Principles",
+    "description": "Fundamentals of user experience and user interface design",
+    "image": "https://blogassets.leverageedu.com/blog/wp-content/uploads/2020/07/30182024/UX-UI-Design.jpg",
+    "category": "Design",
+    "level": "medium",
+    "marks": 130
+  },
+  {
+    "title": "Color Theory",
+    "description": "Understanding the principles of color in design",
+    "image": "https://www.textilesalive.co.nz/img/articles/20201105_understanding_colour_wheel_2000pxw.jpg",
+    "category": "Design",
+    "level": "easy",
+    "marks": 110
+  },
+  {
+    "title": "Typography in Design",
+    "description": "Exploring the importance of typography in design",
+    "image": "https://visme.co/blog/wp-content/uploads/2017/11/A-Visual-Guide-to-the-Anatomy-of-Typography.jpg",
+    "category": "Design",
+    "level": "hard",
+    "marks": 140
+  },
+  {
+    "title": "Graphic Design Tools",
+    "description": "Introduction to popular graphic design tools",
+    "image": "https://miro.medium.com/v2/resize:fit:1400/1*QT46FNSQR2d6uYfxnBkJ1Q.jpeg",
+    "category": "Design",
+    "level": "medium",
+    "marks": 120
+  }
+]

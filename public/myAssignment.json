@@ -1,0 +1,41 @@
+[
+  {
+    "_id": 1,
+    "title": "HTML",
+    "Description": "HTML",
+    "image": "https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2018/11/what-is-html-3.webp",
+    "category": "web development",
+    "level": "easy",
+    "user": "Mahbubul Alam",
+    "marks": 135
+  },
+  {
+    "_id": 2,
+    "title": "Cascading Style Sheet",
+    "Description": "Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.",
+    "image": "https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/686791/regular_1708x683_0811-Eight_CSS_Tips_for_Advanced_Layouts_and_Effects_Dan_Newsletter___blog-caee7061d7279f9b5e3d8ab0db5e3622.png",
+    "level": "easy",
+    "user": "Mahbubul Alam",
+    "marks": 135
+  },
+  {
+    "_id": 3,
+    "title": "JavaScript",
+    "Description": "JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries. ",
+    "image": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220714150931/JavaScript-Introduction.jpg",
+    "category": "web development",
+    "level": "easy",
+    "user": "Mahbubul Alam",
+    "marks": 135
+  },
+  {
+    "_id": 4,
+    "title": "HTML",
+    "Description": "HTML",
+    "image": "https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2018/11/what-is-html-3.webp",
+    "category": "web development",
+    "level": "easy",
+    "user": "Mahbubul Alam",
+    "marks": 135
+  }
+]
