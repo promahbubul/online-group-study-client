@@ -12,6 +12,7 @@ import App from "../App";
 import SingleAssignment from "../pages/SingleAssignment";
 import PrivetRoute from "./PrivetRoute";
 import Loading from "../hook/Loading";
+import CategoryAssignment from "../pages/CategoryAssignment";
 
 export const myRoute = createBrowserRouter([
   {
@@ -25,7 +26,9 @@ export const myRoute = createBrowserRouter([
       },
       {
         path: "/category/:id",
-        loader: () => fetch(""),
+        element: <CategoryAssignment></CategoryAssignment>,
+        loader: ({ params }) =>
+          fetch("http://localhost:3000/api/v1/assignments"),
       },
       {
         path: "/assignments",
@@ -44,9 +47,9 @@ export const myRoute = createBrowserRouter([
       {
         path: "/create-assignment",
         element: (
-          <Loading>
+          <PrivetRoute>
             <CreateAssignment />
-          </Loading>
+          </PrivetRoute>
         ),
       },
       {

@@ -44,7 +44,7 @@ const CreateAssignment = () => {
   };
   return (
     <div className="mt-20">
-      <div className="max-w-2xl  mx-auto bg-green-200 p-10 rounded-md">
+      <div className="md:max-w-2xl w-full  mx-auto bg-green-200 p-10 rounded-md">
         <form
           onSubmit={handleCreateAssignment}
           className="flex  flex-col gap-4 "
@@ -64,7 +64,7 @@ const CreateAssignment = () => {
             id=""
             rows="4"
           ></textarea>
-          <div className="flex flex-row gap-5 justify-between">
+          <div className="flex md:flex-row flex-col gap-5 justify-between">
             <input
               required
               onBlur={(e) => setCategory(e.target.value)}

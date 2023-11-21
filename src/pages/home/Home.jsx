@@ -8,6 +8,8 @@ import { useLoaderData } from "react-router-dom";
 const Home = () => {
   const category = useLoaderData();
 
+  console.log(category);
+
   return (
     <div>
       <Banner />

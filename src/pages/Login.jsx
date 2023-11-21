@@ -1,13 +1,18 @@
 import React, { useContext, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { AuthContext } from "../provider/AuthProvider";
+import Swal from "sweetalert2";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { user, singIn } = useContext(AuthContext);
+  const { user, singIn, signInGoogle } = useContext(AuthContext);
   const navigate = useNavigate();
+
+  const location = useLocation();
+  const from = location?.state?.from?.pathname || "/";
+  console.log("login page", from);
 
   const handleSign = (e) => {
     e.preventDefault();
@@ -16,9 +21,25 @@ const Login = () => {
       .then((result) => {
         console.log();
         ("login Successfully");
-        navigate("/");
+        navigate(from, { replace: true });
       })
       .catch((error) => console.error(error));
+  };
+
+  const handleGoogleSignIn = () => {
+    // console.log("google");
+    signInGoogle()
+      .then((res) => {
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: "Your work has been saved",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+        navigate(from, { replace: true });
+      })
+      .catch((err) => console.error(err));
   };
   return (
     <div className="hero min-h-screen bg-base-200">
@@ -60,7 +81,10 @@ const Login = () => {
             <div className="form-control mt-6">
               <button className="btn btn-primary">Login</button>
             </div>
-            <div className="form-control flex flex-row items-center justify-around text-lg bg-gray-300 p-2 rounded-md cursor-pointer mt-6">
+            <div
+              onClick={handleGoogleSignIn}
+              className="form-control flex flex-row items-center justify-around text-lg bg-gray-300 p-2 rounded-md cursor-pointer mt-6"
+            >
               <FcGoogle className="text-4xl" />
               <span>Login with Google</span>
             </div>

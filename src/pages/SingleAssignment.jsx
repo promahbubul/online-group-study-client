@@ -1,9 +1,7 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import SubmitModal from "../components/SubmitModal";
 import { useLoaderData, useParams } from "react-router-dom";
 import axios from "axios";
-import { AuthContext } from "../provider/AuthProvider";
-
 const SingleAssignment = () => {
   // const [assignment, setAssignment] = useState("");
   // const { id } = useParams();

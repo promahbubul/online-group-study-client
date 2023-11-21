@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import Swal from "sweetalert2";
 
-const AssignmentCard = ({ assignment }) => {
+const AssignmentCard = ({ assignment, onDelete }) => {
   const { user } = useContext(AuthContext);
   console.log();
   const navigate = useNavigate();
@@ -23,10 +23,11 @@ const AssignmentCard = ({ assignment }) => {
       .delete(`http://localhost:3000/api/v1/delete-assignment/${id}`)
       .then((res) => {
         if (res.data.deletedCount > 0) {
+          onDelete(id);
           Swal.fire({
             position: "top-end",
             icon: "success",
-            title: "Your work has been saved",
+            title: "Assignment Deleted",
             showConfirmButton: false,
             timer: 1500,
           });
@@ -48,7 +49,7 @@ const AssignmentCard = ({ assignment }) => {
       <img
         src={assignment.image}
         alt=""
-        className="w-full h-[220px]   rounded-md"
+        className="w-full md:h-[220px]   rounded-md"
       />
       <p className="text-xl font-extrabold -top-20 relative inline-block bg-indigo-500 text-white px-5 py-2">
         {assignment.marks}
@@ -61,12 +62,17 @@ const AssignmentCard = ({ assignment }) => {
         <span className="text-pink-500">{assignment.level}</span>
 
         <div className=" flex justify-between my-3">
-          <button
-            onClick={() => handleUpdate(assignment._id)}
-            className="btn bg-indigo-950 text-white"
-          >
-            Update
-          </button>
+          {user?.email === assignment.user ? (
+            <button
+              onClick={() => handleUpdate(assignment._id)}
+              className="btn bg-indigo-950 text-white"
+            >
+              Update
+            </button>
+          ) : (
+            ""
+          )}
+
           {user?.email === assignment.user ? (
             <button
               onClick={() => handleDelete(assignment._id)}
